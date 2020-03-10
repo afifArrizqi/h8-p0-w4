@@ -2,6 +2,7 @@ function changeMe(arr) {
   // you can only write your code here!
   // var obj = {};
   var tahunSekarang = 2020;
+  if(arr.length === 0) console.log('""');
   for (var i = 0; i < arr.length; i++) {
     var name = (i + 1) + ". " + arr[i][0] + " " + arr[i][1];
     var obj = {
