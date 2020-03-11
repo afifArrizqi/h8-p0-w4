@@ -4,17 +4,17 @@ function tukarBesarKecil(kalimat) {
   var abjadUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var kalimatBaru = "";
   for (var i = 0; i < kalimat.length; i++) {
-    var checker = true;
+    var bukanAbjad = true;
     for (var j = 0; j < abjadLower.length; j++) {
       if (kalimat[i] === abjadLower[j]) {
         kalimatBaru += abjadUpper[j];
-        checker = false;
+        bukanAbjad = false;
       } else if (kalimat[i] === abjadUpper[j]) {
         kalimatBaru += abjadLower[j];
-        checker = false;
+        bukanAbjad = false;
       }
     }
-    if (checker) kalimatBaru += kalimat[i];
+    if (bukanAbjad) kalimatBaru += kalimat[i];
   }
   return kalimatBaru;
 }

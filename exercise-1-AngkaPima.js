@@ -1,14 +1,14 @@
 function angkaPrima(angka) {
   // you can only write your code here!
-  var checker = true;
+  var prima = true;
   if (angka <= 1) return false;
   for (var i = 2; i < angka; i++) {
     if (angka % i === 0) {
-      checker = false;
+      prima = false;
       break;
     }
   }
-  return checker;
+  return prima;
 }
 
 // TEST CASES
