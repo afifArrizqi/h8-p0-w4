@@ -10,7 +10,7 @@ function changeMe(arr) {
       lastName: arr[i][1],
       gender: arr[i][2]
     }
-    tahunSekarang - arr[3] > 0 ? obj.age = tahunSekarang - arr[3] : obj.age = "Invalid Birth Year";
+    tahunSekarang - arr[i][3] > 0 ? obj.age = tahunSekarang - arr[i][3] : obj.age = "Invalid Birth Year";
     console.log(`${name} :`);
     console.log(obj);
   }
